@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Layout*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards, 
+.center{
+    display: flex;
+}
+
+.center{
+    flex-direction: column;
+    gap: 2rem
+}
+@media (max-width: 999px ){
+    .cards{
+        flex-direction: column;
+    }
+    .center{
+        gap: 0
+    }
+}
+
+/*Colors & Fonts*/
+
+h1,
+h2,
+span{
+   color: hsl(234, 12%, 34%);
+}
+
+p{
+    color: hsl(229, 6%, 66%);
+}
+
+
+h1{
+    font-weight: 200;
+}
+@media (max-width: 999px ){
+    h1{
+        font-size: 1.6rem; 
+    }
+}
+
+
+h2,
+span{
+   font-weight: 700;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+p{
+    font-weight: 400;
+}
+.title-major p{
+    font-size: .9rem;
+}
+.card p {
+    font-size: .8rem;
+    line-height: 1.75;
+}
+
+/* main header*/
+
+.title-major{
+    margin: 0 auto;
+    width: 40%;
+}
+.title-major h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title-major p{
+    text-align: center ;
+}
+
+@media (max-width: 999px ){
+    .title-major{
+        margin-bottom: 5rem;
+        width: 70%; 
+    }
+    .title-major p{
+        margin-top: 1.8rem ;
+    }
+    
+}
+@media (max-width: 567px ){
+    .title-major {
+        width: 100%;
+    }
+}
+
+/*Hr*/
+
+hr{
+    border: .125rem solid;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+
+.red{color:hsl(0, 78%, 62%)}
+.cyan{color:hsl(180, 62%, 55%)}
+.orange{color:hsl(34, 97%, 64%)}
+.blue{color:hsl(212, 86%, 64%)}
+
+/* cards*/
+
+.cards{
+    margin-top: 3rem;
+}
+
+.card{
+    border-radius: .5rem;  
+    height: 15rem;
+    width: 91%;
+    box-shadow: 0px 10px 10px 5px hsl(227, 16%, 89%); 
+
+}
+
+@media (max-width: 999px ){
+    .cards{
+        margin-top: 0;
+    }
+    .card{
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+.left,
+.right,
+.center{
+    width: 100%;
+}
+
+.title-right,
+.title-left,
+.title-up,
+.title-down{
+    width: 70%;
+    margin: 0 auto;
+    transform: translateY(2rem);
+}
+
+.right,
+.left{
+    transform: translateY(135px);
+}
+@media (max-width: 999px ){
+    .right,
+    .left{
+        transform: translateY(0);
+    }
+}
+
+img{
+    position: relative;
+    left: 75%;
+    top: 70px;
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 3rem;
+}
+.attribution {
+   font-size: 13px;
+   text-align: center;
+   margin-bottom: 3rem;
+   margin-top: 2rem
+       
+}
+.attribution a { color: hsl(228, 45%, 44%); }
